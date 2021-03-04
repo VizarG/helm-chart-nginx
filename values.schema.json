@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "properties": {
+    "replicaCount": {
+      "type": "integer",
+      "form": true,
+      "title": "Number of replicas",
+      "description": "Number of replicas to deploy"
+    },
+    "image": {
+      "type": "object",
+      "form": true,
+      "title": "Image",
+      "description": "Tag that you need to deploy.",
+      "properties": {
+        "repository": {
+          "type": "string",
+          "form": true,
+          "title": "Image name",
+          "description": "Image that you need"
+        },
+        "tag": {
+          "type": "string",
+          "form": true,
+          "title": "Image tag",
+          "description": "Tag that you need to deploy"
+        }
+      }
+    }
+  }
+}
